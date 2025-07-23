@@ -10,8 +10,8 @@ export interface Props {
 
 const { 
 	title, 
-	description = "Meme Face - Free online meme generator. Create, share, and discover the funniest memes. Support for multiple templates and custom features to make everyone a meme master!",
-	keywords = "meme face, memes, meme generator, funny memes, meme maker, online memes, free memes, meme templates",
+	description = "Meme Face - The ultimate destination for discovering and sharing the internet's most hilarious meme faces. Browse thousands of iconic meme faces, from classic Troll Face to modern viral sensations. Free meme face collection with daily updates.",
+	keywords = "meme face, meme faces, funny meme faces, classic meme faces, troll face, rage guy, yao ming meme, reaction meme faces, animal meme faces, celebrity meme faces, anime meme faces, viral meme faces, internet meme faces, free meme faces, meme face collection, meme face gallery, meme face generator, online meme faces, download meme faces, share meme faces, meme face culture, internet culture, funny memes, viral memes, reaction images, social media memes",
 	image = "/og-image.jpg"
 } = Astro.props;
 
@@ -50,6 +50,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site || Astro.url.origin)
 		<meta name="robots" content="index, follow" />
 		<meta name="author" content="Meme Face" />
 		<meta name="theme-color" content="#8B5CF6" />
+		<link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
 		
 		<!-- Structured Data -->
 		<script type="application/ld+json" set:html={JSON.stringify({
@@ -98,16 +99,16 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site || Astro.url.origin)
 					<div>
 						<h3 class="text-xl font-bold mb-4">Meme Face</h3>
 						<p class="text-gray-400">
-							Free online meme generator that lets everyone create and share funny memes.
+							The ultimate destination for discovering and sharing the internet's most hilarious meme faces. Browse thousands of iconic meme faces from classic to viral sensations.
 						</p>
 					</div>
 					<div>
 						<h4 class="font-semibold mb-4">Features</h4>
 						<ul class="space-y-2 text-gray-400">
-							<li><a href="/" class="hover:text-white transition-colors">Meme Gallery</a></li>
+							<li><a href="/" class="hover:text-white transition-colors">Meme Face Gallery</a></li>
 							<li><a href="/categories" class="hover:text-white transition-colors">Browse Categories</a></li>
-							<li><a href="/search" class="hover:text-white transition-colors">Search Memes</a></li>
-							<li><a href="/popular" class="hover:text-white transition-colors">Popular Memes</a></li>
+							<li><a href="/search" class="hover:text-white transition-colors">Search Meme Faces</a></li>
+							<li><a href="/popular" class="hover:text-white transition-colors">Popular Meme Faces</a></li>
 						</ul>
 					</div>
 					<div>

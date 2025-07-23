@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://memeface.com/sitemap.xml
+
+# Allow all meme face content
+Allow: /img/meme-face/
+Allow: /categories
+Allow: /search
+Allow: /popular
+Allow: /about
+
+# Disallow admin areas (if any)
+Disallow: /admin/
+Disallow: /private/
+
+# Crawl delay for better server performance
+Crawl-delay: 1 
