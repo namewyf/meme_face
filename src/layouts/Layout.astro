@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import Logo from '../components/Logo.astro';
 
 export interface Props {
 	title: string;
@@ -73,8 +74,8 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site || Astro.url.origin)
 		<header class="bg-white shadow-sm sticky top-0 z-50">
 			<nav class="container mx-auto px-4 py-4">
 				<div class="flex items-center justify-between">
-					<a href="/" class="text-2xl font-bold text-purple-600 hover:text-purple-700 transition-colors">
-						Meme Face
+					<a href="/" class="hover:opacity-80 transition-opacity">
+						<Logo />
 					</a>
 					<div class="hidden md:flex items-center space-x-8">
 						<a href="/" class="text-gray-700 hover:text-purple-600 transition-colors">Home</a>
@@ -96,7 +97,9 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site || Astro.url.origin)
 			<div class="container mx-auto px-4">
 				<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
 					<div>
-						<h3 class="text-xl font-bold mb-4">Meme Face</h3>
+						<div class="mb-4">
+							<Logo variant="light" size="sm" />
+						</div>
 						<p class="text-gray-400">
 							The ultimate destination for discovering and sharing the internet's most hilarious meme faces. Browse thousands of iconic meme faces from classic to viral sensations.
 						</p>
