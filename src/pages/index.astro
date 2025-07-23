@@ -1,0 +1,63 @@
+---
+import Layout from '../layouts/Layout.astro';
+import MemeFaceGallery from '../components/MemeFaceGallery.jsx';
+---
+
+<Layout title="Meme Face - Best Meme Collection | Funny Memes Gallery">
+	<main class="min-h-screen bg-gray-50">
+		<!-- Hero Section -->
+		<section class="bg-gradient-to-r from-purple-600 to-pink-600 text-white py-12">
+			<div class="container mx-auto px-4 text-center">
+				<h1 class="text-4xl md:text-6xl font-bold mb-4">
+					Meme Face
+				</h1>
+				<p class="text-xl md:text-2xl mb-8 opacity-90">
+					The Ultimate Collection of Funny Memes
+				</p>
+				<div class="flex flex-wrap justify-center gap-4">
+					<div class="bg-white bg-opacity-20 rounded-full px-6 py-2">
+						<span class="font-semibold">5,234+ Memes</span>
+					</div>
+					<div class="bg-white bg-opacity-20 rounded-full px-6 py-2">
+						<span class="font-semibold">Updated Daily</span>
+					</div>
+					<div class="bg-white bg-opacity-20 rounded-full px-6 py-2">
+						<span class="font-semibold">100% Free</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Meme Gallery Section -->
+		<section class="py-8">
+			<MemeFaceGallery client:load />
+		</section>
+
+		<!-- SEO Content Section -->
+		<section class="container mx-auto px-4 py-16 bg-white">
+			<div class="max-w-4xl mx-auto">
+				<h2 class="text-3xl font-bold text-gray-900 mb-8">About Meme Face</h2>
+				<div class="prose prose-lg max-w-none">
+					<p class="text-gray-700 mb-6">
+						Meme Face is the ultimate destination for discovering and sharing the funniest memes on the internet. Our curated collection features thousands of hilarious memes, reaction images, and viral content that will make you laugh out loud.
+					</p>
+					<p class="text-gray-700 mb-6">
+						From classic meme formats to the latest trending content, we've got everything you need to express yourself online. Whether you're looking for funny animal memes, relatable daily life moments, or the perfect reaction image, our extensive gallery has you covered.
+					</p>
+					<p class="text-gray-700 mb-6">
+						Our team constantly updates the collection with fresh, trending memes to ensure you always have access to the latest and greatest content. Browse through our categories, use the search function, or simply scroll through our beautiful waterfall layout to discover your next favorite meme.
+					</p>
+					<h3 class="text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Meme Face?</h3>
+					<ul class="list-disc list-inside text-gray-700 space-y-2 mb-6">
+						<li>Massive collection of over 5,000+ memes</li>
+						<li>Beautiful waterfall layout for easy browsing</li>
+						<li>Regular updates with trending content</li>
+						<li>Easy sharing and downloading</li>
+						<li>Mobile-optimized design</li>
+						<li>Completely free to use</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	</main>
+</Layout>
